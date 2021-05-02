@@ -216,8 +216,177 @@ c=a;
 console.log(b);
 console.log(c);
 
+//comparaciones
+console.log(2 > 1);
+console.log(2 == 1);
+console.log(2 !=1);
 
+let numm = 2 > 1;
 
+//comparaciones entre cadenas
+console.log('z' > 'a');
+console.log('Show' > 'show');
+console.log('casa' > 'casas');
 
+//comparacion de diferentes tipos
+//al comprar valores de diferentes tipos javascript convierte los valores a numeros
+console.log('2' > 1);
+console.log('01'== 1);
+console.log(true > 0);
+console.log(false == 0);
+console.log('hola' > 0);
 
+a=0;
+b='0';
 
+Boolean_a = Boolean(a);
+Boolean_b = Boolean(b);
+
+console.log('*******************');
+console.log(a == b);
+
+console.log('*******************');
+console.log(null > 0);
+console.log(null > 0);
+console.log(null >= 0);
+console.log(null == 0);
+
+console.log('*******************');
+console.log(undefined > 0);
+console.log(undefined > 0);
+console.log(undefined >= 0);
+console.log(undefined == 0);
+
+console.log('*******************');
+console.log(NaN > 0);
+console.log(NaN > 0);
+console.log(NaN >= 0);
+console.log(NaN == 0);
+
+console.log('*******************');
+console.log(null == undefined);
+console.log(null == 5);
+console.log(undefined == 5);
+
+//no diferencia de 0 de falso
+console.log('*******************');
+console.log('' == false);
+console.log(0 == false);
+
+//igualacion estricta
+console.log(0 == false);
+console.log(null == undefined);
+
+console.log('*******************');
+console.log(5 > 4);
+console.log('apple' > 'pineapple');
+console.log('2' > '12');
+console.log(undefined == null);
+console.log(undefined === null);
+console.log(null == '0');
+console.log(null === '\n0\n');
+
+//sentencia if
+//if de linea
+if(4 > 5) console.log('mensaje');
+
+if(4 >5 ){
+    b = 5 + 3;
+    console.log('mensaje');
+}
+
+if ('45a' / 3){
+    console.log('no entro');
+}
+if('0'){
+    console.log('entro');
+}
+if(4/2){
+    console.log('entro');
+}
+
+let edadx;
+if(edadx){
+    console.log('variable definida');
+}else{
+    console.log('variable indefinida');
+}
+
+//haga un algoritmo que dada una edad retorne true
+//si es mayor de edad y falso su no lo es
+
+let edad_usuario = 17;
+if(edad_usuario >= 18){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+console.log(edad_usuario == 18);
+
+//operador ternario
+//condicion ? operacion verdadera : operacion falsa
+resultado = edad_usuario >= 18 ? x = 5 : x = 7;
+
+//operador logico
+//or
+/*
+v or v = v
+v or f = v
+f or v = v
+f or f = f
+*/
+
+console.log('*******************');
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+console.log(1 || '0');
+console.log('0' || '0');
+
+if (4 == 4 || 2 > 5){
+    console.log('verdadero');
+}
+
+//resultado = valor_uno || valor_dos || valor_tres;
+//1. evalua los operando de izquierda a derecha
+//2. por cada operando convierte el valor a booleano si el resultado es true
+//se detiene y retorna el valor original de ese operando
+//3. si todos los operando han sido evaluados (todos son falsos) retorna el ultimo operando
+
+let comparacion_boolenao = true || false || true;
+comparacion_boolenao= '0' || '0';
+comparacion_boolenao= undefined || null || NaN || '';
+comparacion_boolenao= undefined || null || NaN || 3;
+comparacion_boolenao= undefined || null || 'hola' || 3;
+
+// and
+console.log('*******************');
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+if (4 == 4 && 2 > 5){
+    console.log('verdadero');
+}
+
+let comparacion_boolena = true && false && true;
+comparacion_boolena= '0' && '0';
+comparacion_boolena= undefined && null && NaN && '';
+comparacion_boolena= undefined && null && NaN && 3;
+comparacion_boolena= undefined && null && 'hola' && 3;
+// devuelve el primer valor falso o el ultimo si todos son verdaderos
+
+//prevalencia u orden entre or y and
+
+// a && b || c && d = (a && b) || (c && d)
+
+// negacion
+console.log(! true);
+console.log(! false);
+console.log(!! undefined); //= boolean undefined
+
+//nullish fision de nulos
