@@ -92,6 +92,54 @@ console.log(typeof 'hola');
 console.log(typeof(alert));
 console.log(typeof(null));
 
+//interacciones: alert, prompt, confirm
+//alert
+alert('hola mundo');
+//prompt
+ let nombre_capturado =prompt('titulo del mensaje','hola');
+alert(nombre_capturado);
+//confirm
+let casa= confirm('te gusta el pudin?');
+console.log(casa);//aparece true o false depende que opcion escojas.
+
+//convercion de tipos
+//hay dos tipos de converciones 
+//convertir a Sstring
+let valor = true;
+console.log (typeof valor);
+valor = String(valor);
+console.log(valor);
+console.log(typeof valor);
+
+//convertir a nuemro
+let cadena='123';
+let num_cad= Number(cadena);//123
+console.log(Number('hola'));//NaN
+
+/*
+undefined--> NaN
+mull-->0
+true-->1
+false-->0
+String ''-->0
+String 'hola' -->NaN
+*/
+
+//convertir a booleano
+console.log(Boolean('hola'));
+
+/*
+undefined--> false
+mull-->false
+String ''--> false
+NaN-->false
+0-->false
+'0'-->true
+*/
+
+console.log(Boolean (String(0)));
+console.log(Boolean (0));
+
 
 
 
