@@ -135,10 +135,88 @@ String ''--> false
 NaN-->false
 0-->false
 '0'-->true
+' '-->true
 */
 
 console.log(Boolean (String(0)));
 console.log(Boolean (0));
+
+//operadores basicos
+//operaciones unarias y binarias
+let x, z, resul;
+x=5;
+z=2;
+res = x+z;
+res = x-z;
+res = x*z;
+res = x/z;
+res = x ** z;
+
+alert('1'+ 2);
+alert(1 +'2');
+
+alert(2 + 2 + '1');
+alert('1' + 2 + 2);
+
+alert(2 - '1');
+alert('6' / 2);
+alert('6' / '2a');
+
+//operaciones unarias
+a=1;
+console.log(+a);
+a= -1;
+console.log(+a);
+console.log(+true);
+console.log(+false);
+console.log(+NaN);
+console.log(+undefined);
+console.log('');
+
+a='2';
+b='3';
+console.log(+a + +b);
+console.log(Number(a) + Number(b));
+
+//asignaciones
+a = 2 + 3
+a = b = c = 2 + 3
+
+c = 2 + 3
+b = c
+a = b
+
+c = 3 -(a = b + 1)
+
+//modificadores
+a = a + 2
+a += 2
+a = a - 2
+a -= 2;
+
+//incremento y decremento
+//++ incremento
+//-- decremento
+a=2;
+a ++;
+console.log(a);
+
+a = 2;
+a --;
+console.log(a);
+
+//posicion del incremento y decremento
+a=1;
+b= ++ a;
+console.log(b);
+
+a=1;
+b= a ++;
+c=a;
+console.log(b);
+console.log(c);
+
+
 
 
 
