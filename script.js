@@ -390,3 +390,93 @@ console.log(! false);
 console.log(!! undefined); //= boolean undefined
 
 //nullish fision de nulos
+//1. evalua los operando de izquierda a derecha
+//2. por cada operando revisa si es null o undefined y regresa el promero que no sea ni null ni undefined
+//3. si todos los operando son null o undefined regresa el primero
+
+a = null ?? undefined ?? null ?? 'hola' ?? null ?? 'oscar'; //'hola'
+
+a = null ?? undefined ?? null ?? undefined ?? null ?? null; //'null' por ser el ultimo
+
+//while
+let i = 0;
+while(i>=10){
+    console.log('el valor de i es:', (i));
+    i++;
+}
+
+i=10
+while(i<=0){
+    console.log('el valor de i es:', (i));
+    i--;
+}
+
+//do-while
+i = 1;
+do{
+console.log('el valor de i es:', (i));
+i++;
+}while(i<=10);
+
+//for
+console.log('*******************');
+
+for(i=0; i<= 10; i++){
+    console.log('el valor de i es', (i));
+}
+for(i=10; i>= 0; i--){
+    console.log('el valor de i es', (i));
+}
+
+//alcance de variable
+console.log('*******************');
+let k = 0;
+for( k=0; k<=10; k++){
+console.log('el valor de k es:', k);
+}
+console.log('el valor de k por fuera es:',k);
+
+let g = 10;
+for( g=10; g>=0; g--){
+console.log('el valor de k es:', g);
+}
+console.log('el valor de k por fuera es:',g);
+
+//salto de partes
+w=0;
+for(; w<=10; ){
+    console.log('el valor de w es:', (w++));
+}
+
+//break y continue
+console.log('*******************');
+w=0;
+while(1){
+    console.log('el valor de w es;', (w));
+    w++;
+    if( w== 11) break;
+}
+
+for(i=0; i<= 10; i++){
+    if(i % 2 != 0)continue;
+    console.log((i), 'es un numero par.');
+}
+
+console.log('*******************');
+for(i=0; i<= 10; i++){
+    for(j=0; j<=10; j++){
+   console.log('la suma de i+j es:', (i+j));
+       if(j == 2) break;    
+      }
+       if(j == 2) break;     
+}
+console.log('salio');
+
+console.log('*********etiquetas para break y continue**********');
+princial:for(i=0; i<= 10; i++){
+    for(j=0; j<=10; j++){
+   console.log('la suma de i+j es:', (i+j));
+       if(j == 2) break princial;    
+      }  
+}
+console.log('salio');
